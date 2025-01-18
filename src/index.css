@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  /*background-color: #faaca8;*/
+  /*background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);*/
+
+  margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 80vw;
+    /*background-image: url('./assets/virtualback.jpg'); /* ✅ Background Image */
+    background-size: cover;          /* ✅ Ensures the image covers the entire viewport */
+    background-position: center;     /* ✅ Centers the image */
+    background-repeat: no-repeat;    /* ✅ Prevents tiling */
+    background-attachment: fixed;    /* ✅ Keeps the image fixed while scrolling */
+    overflow: hidden;                /* ✅ Prevents unwanted scrollbars */
+}
+
+body.greenScreen {
+  background-color: #00ff00;
+  background-image: none;
+}
